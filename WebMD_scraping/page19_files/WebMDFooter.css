@@ -1,0 +1,254 @@
+/* BEGIN - Icon Fonts */
+@font-face {
+	font-family: 'icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url('//css.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/fonts/icons.woff') format('woff'),
+	url('//css.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/fonts/icons.ttf') format('truetype'),
+	url('//css.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/fonts/icons.svg#icons') format('svg');
+}
+/* END - Icon Fonts */
+
+/* BEGIN - WebMD Responsive Footer */
+.global-footer {
+	max-width: 61.25em;
+	margin-left: auto;
+	margin-right: auto;
+	color: #767674;
+	font-weight: 500;
+	margin: 0 auto 1.5em auto;
+	padding: 0;
+	/* Scoping this here for footer in Communities */
+}
+.global-footer::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+@media screen and (max-width: 77.438em) {
+	.global-footer {
+		padding: 0 20px;
+	}
+}
+.global-footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.global-footer ul li {
+	line-height: 1.375em;
+}
+.global-footer-column {
+	float: left;
+	display: block;
+	margin-right: 2.35765%;
+	width: 23.23176%;
+	border-left: 1px solid #e8e6e6;
+	padding: 0 0.813em;
+}
+.global-footer-column:last-child {
+	margin-right: 0;
+}
+.global-footer-column:first-of-type {
+	border-left: none;
+}
+.global-footer-column.logo {
+	padding: 0;
+}
+@media screen and (max-width: 63.938em) {
+	.global-footer-column.logo {
+		float: left;
+		display: block;
+		margin-right: 4.82916%;
+		width: 100%;
+		margin: 0 0 2em 0;
+		padding: 0;
+	}
+	.global-footer-column.logo:last-child {
+		margin-right: 0;
+	}
+	.global-footer-column.logo .social-icons {
+		float: right;
+		margin-top: 0;
+	}
+	.global-footer-column.logo .social-icons a {
+		font-size: 2em;
+	}
+}
+@media screen and (max-width: 63.938em) {
+	.global-footer-column:not(.logo) {
+		float: left;
+		display: block;
+		margin-right: 4.82916%;
+		width: 30.11389%;
+	}
+	.global-footer-column:not(.logo):last-child {
+		margin-right: 0;
+	}
+	.global-footer-column:not(.logo):nth-of-type(2) {
+		border-left: none;
+	}
+}
+@media screen and (max-width: 39.938em) {
+	.global-footer-column:not(.logo) {
+		float: left;
+		display: block;
+		margin-right: 4.82916%;
+		width: 100%;
+		border: none;
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+	.global-footer-column:not(.logo):last-child {
+		margin-right: 0;
+	}
+	.global-footer-column:not(.logo) h3.policy {
+		cursor: default;
+	}
+	.global-footer-column:not(.logo) h3 {
+		border-bottom: 1px solid #e8e6e6;
+		cursor: pointer;
+		margin: 0;
+		padding: 0.7em 0;
+	}
+	.global-footer-column:not(.logo) h3:not(.policy)::after {
+		content: "\e611";
+		display: inline-block;
+		font-family: icons;
+		margin-left: 5px;
+		position: relative;
+		top: 3px;
+	}
+	.global-footer-column:not(.logo) ul.policy {
+		display: block;
+	}
+	.global-footer-column:not(.logo) ul {
+		display: none;
+		font-size: 1.2em;
+		margin-bottom: 1em;
+	}
+	.global-footer-column:not(.logo) ul li {
+		border-bottom: 1px solid #e8e6e6;
+		padding: .7em 0;
+	}
+	.global-footer-column:not(.logo) ul.expanded {
+		display: block;
+	}
+}
+.global-footer h3 {
+	color: #333132;
+	font-family: "Fira Sans", Verdana, sans-serif;
+	font-size: 1.188em;
+	font-weight: 500;
+	margin: 2.5rem 0 1rem 0;
+	line-height: 1.375rem;
+}
+.global-footer h3:first-child {
+	margin-top: 0;
+}
+.global-footer a {
+	color: inherit;
+	font-size: 0.875em;
+}
+.global-footer-logo {
+	display: block;
+	width: 110px;
+}
+@media screen and (max-width: 63.938em) {
+	.global-footer-logo {
+		float: left;
+	}
+}
+.global-footer .social-icons {
+	margin-top: 0.938em;
+}
+.global-footer .social-icons li {
+	display: block;
+	float: left;
+	margin-right: 0.813em;
+}
+.global-footer .social-icons a {
+	color: #222;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+.global-footer .social-icons a::after {
+	font-family: icons;
+}
+.global-footer .social-icons a.tw::after {
+	color: #00abe2;
+	content: "\e905";
+}
+.global-footer .social-icons a.pt::after {
+	color: #eb1a21;
+	content: "\e904";
+}
+.global-footer .social-icons a.fb::after {
+	color: #225b9e;
+	content: "\e903";
+}
+.global-footer-copyright {
+	color: #767674;
+	font-weight: 500;
+	margin: 1em auto;
+	max-width: 61.25em;
+	padding: 0 1em;
+	text-align: center;
+	width: 100%;
+}
+.global-footer-copyright a {
+	color: #187aab;
+	font-size: 0.813rem;
+	font-weight: 500;
+}
+.global-footer-copyright p {
+	font-size: 0.875em;
+	margin: 0;
+	line-height: 1.125rem;
+}
+.global-footer-certificates {
+	text-align: center;
+}
+.global-footer-certificates ul {
+	max-width: 61.25em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+}
+.global-footer-certificates ul::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.global-footer-certificates ul li {
+	display: inline-block;
+	margin-left: 2em;
+}
+.global-footer-certificates ul li:first-child {
+	margin-left: 0;
+}
+@media screen and (max-width: 47.938em) {
+	.global-footer-certificates ul li {
+		display: block;
+		margin: 0 0 1rem 0;
+		text-align: center;
+	}
+}
+.global-footer-certificates .logo_AdChoices::after {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAMCAYAAAC0qUeeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwMi8yOC8xMsEj3asAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABfElEQVQokX3RvUubcRAH8O/d83uePFUjSdCGWkRRC620gaB2iYuUUipYX8bO0sm9o3+BdikOLoHiKERtCS7q5CCY5olC0qE4pVq0vvCI0Tx5nt91MVCreHAcd3zg4A4vVnenHi7l3c6vzoSI4L6kSCZ37GmJWUzaYpqLKuPTj+HEHu4IvtQSM4nzBtOkLzJ06PmF+IrzEYBxCzMAZeDoz7tkujv8INVsqpmq1tPRpe/Fjm+F9zfwdbUBYL/ijVS1jmhInImKZ34w37KcX3uSLTz7FwMAGg36HVb8yx3rOz8eTY632epNTcvTgyvf6cnufL6ByxVv8NwP3tb7q0DaCDAMopNA9IG6ngsAeCImgazUeqmv6Fa+aKEuW/HCI1tNO6+f79dxFQCY+PTCD1Il93KbQButIfXh53Bis76JQovbYjHtWczpqMm101rw0mZkyiPJhf9PR7FMzq1oCTca7Hc3hQa2XvU6dz0EALi9wZp9bJuljgar/z4IAH8BThGjcl1xsUEAAAAASUVORK5CYII=);
+	content: '';
+	display: inline-block;
+	height: 12px;
+	width: 11px;
+}
+.global-footer .jawsonly {
+	height: 1px;
+	left: -10000px;
+	overflow: hidden;
+	margin: -1px;
+	position: absolute;
+	top: auto;
+	width: 1px;
+}
+/* END - WebMD Responsive Footer */

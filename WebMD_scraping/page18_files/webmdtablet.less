@@ -1,0 +1,42 @@
+.touch .layout-content.content-left-sidebar-right .layout-region.left-sidebar,
+.touch .layout-content.sidebar-left-content-right .layout-region.left-sidebar,
+.touch .layout-content.sidebar-left-content-center-sidebar-right .layout-region.left-sidebar,
+.touch .layout-content.header-top-content-left-sidebar-right .layout-region.left-sidebar,
+.touch .layout-content.header-top-sidebar-left-content-right .layout-region.left-sidebar,
+.touch .layout-content.content-left-sidebar-right .layout-region.right-sidebar,
+.touch .layout-content.sidebar-left-content-right .layout-region.right-sidebar,
+.touch .layout-content.sidebar-left-content-center-sidebar-right .layout-region.right-sidebar,
+.touch .layout-content.header-top-content-left-sidebar-right .layout-region.right-sidebar,
+.touch .layout-content.header-top-sidebar-left-content-right .layout-region.right-sidebar {
+  width: 300px;
+}
+/* Fix for non-Clickable checkboxes */
+
+fieldset input[type="checkbox"] {
+  position: static;
+  left: auto;
+}
+fieldset input[type="checkbox"] + label {
+  position: static;
+  line-height: normal;
+  margin: auto;
+}
+fieldset input[type="checkbox"] + label.hidden {
+  display: none !important;
+}
+fieldset input[type="checkbox"] + label:before,
+fieldset input[type="checkbox"][disabled] + label:before,
+fieldset input[type="checkbox"] + label:hover:before,
+fieldset input[type="checkbox"]:focus + label:before,
+fieldset input[type="checkbox"][disabled] + label:hover:before,
+fieldset input[type="checkbox"][disabled]:focus + label:before,
+fieldset input[type="checkbox"]:checked + label:after,
+fieldset input[type="checkbox"][disabled]:checked + label:after {
+  display: none;
+}
+.forum-header .add-post {
+  position: inherit;
+  top: 10px;
+  right: 0;
+  width: inherit !important;
+}

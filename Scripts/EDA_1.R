@@ -21,8 +21,20 @@ for(i in 1:length(file_list)){
 }
 
 # Single DF EDA ------------------
-`available-carnivore` %>% 
-  
+df_eda1 <- `bloodpressure-keto` %>% 
+  select(id, link, title, comment) %>% 
+  tidytext::unnest_tokens(word, comment) %>% 
+  anti_join(stop_words)
+
+df_eda1 %>% 
+  count(word, sort = TRUE) %>%
+  filter(n > 250) %>%
+  mutate(word = reorder(word, n)) %>%
+  ggplot(aes(word, n)) +
+  geom_col() +
+  xlab(NULL) +
+  coord_flip()
+
 
 
 

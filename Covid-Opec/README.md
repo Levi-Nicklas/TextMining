@@ -12,6 +12,6 @@ up to the COVID-19 health/financial crisis.
 
 1.  Load the script `GetNewsData.R`.
 2.  
-3.
-4.
+3.  
+4.  
 

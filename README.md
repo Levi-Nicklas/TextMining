@@ -6,6 +6,6 @@ This is where I will keep my work related to text mining, NLP, text processing..
 
 - Work on _reddit_ text mining.
 
-- OPEC/COVID-19 News Headlines
+- Animal Crossing
 
 - Other

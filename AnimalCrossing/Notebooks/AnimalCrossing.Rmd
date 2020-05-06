@@ -1,0 +1,36 @@
+---
+title: "Animal Crossing"
+output: html_notebook
+---
+
+```{r Setup, message = F}
+library(tidyverse)
+
+critic <- readRDS("../Data/critic.RDS")
+user_reviews <- readRDS("../Data/user_reviews.RDS")
+items <- readRDS("../Data/items.RDS")
+villagers <- readRDS("../Data/villagers.RDS")
+```
+
+# Check out data
+
+```{r}
+head(critic)
+```
+
+The `critic` dataset seems to have a ton of text data about the game. Would make for a nice text mining study.
+
+```{r}
+head(items)
+```
+
+The `items` dataset has a all the items from the game and how many bells :moneybag: they are worth (buy/sell), how it is able to be obtained, and if it is customizable!
+
+
+```{r}
+head(user_reviews)
+```
+
+```{r}
+head(villagers)
+```
